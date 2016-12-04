@@ -7,5 +7,8 @@ db.dogs.remove({isMale:true})
 2: to remove ONLY one matching document 
 db.dogs.remove({isMale:true}, 1)
 
-3: deleate all the documents == truncate table 
+3: to specify how many documents/records you want to remove 
+db.dogs.remove({isMale:true}).limit(2)
+
+4: deleate all the documents == truncate table 
 db.dogs.remove() 
